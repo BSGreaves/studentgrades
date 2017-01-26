@@ -20,7 +20,6 @@ var dGrade = [];
 var cGrade = [];
 var bGrade = [];
 var aGrade = [];
-var holder = [];
 
 //Run through the grades and push them into counter arrays
 for (i = 0; i < scores.length; i++) {
@@ -49,14 +48,12 @@ console.log("Number of failing grades: ", fail.length);
 
 //Find the lowest grade
 var lowestGrade = scores;
-for (i = 0; i < lowestGrade.length; i++) {
-	lowestGrade.sort(function(a, b){return a-b});
-}
+lowestGrade.sort(function(a, b){return a-b});
 console.log("The lowest grade is ", lowestGrade[0]);
 
 //Find the highest grade
 var highestGrade = scores;
-for (i = 0; i < highestGrade.length; i++) {
-	highestGrade.sort(function(a, b){return b-a});
-}
+highestGrade.sort(function(a, b){return b-a});
 console.log("The highest grade is ", highestGrade[0]);
+
+
